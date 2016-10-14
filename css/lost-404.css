@@ -1,0 +1,343 @@
+/*
+ * Lost - 404 Page
+ * Build Date: October 2016
+ * Author: joashp
+ */
+
+
+/*
+ * http://meyerweb.com/eric/tools/css/reset/ 
+ * v2.0 | 20110126
+ * License: none (public domain)
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font - size: 100 %;
+    font: inherit;
+    vertical - align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block;
+}
+
+body {
+    line - height: 1;
+}
+
+ol,
+ul {
+    list - style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote: before,
+blockquote: after,
+q: before,
+q: after {
+    content: '';
+    content: none;
+}
+
+table {
+    border - collapse: collapse;
+    border - spacing: 0;
+}
+
+
+/* ---------------lost 404 style---------------------- */
+
+*,
+*::after,
+*::before {
+    box - sizing: border - box;
+}
+
+html {
+    background: #000;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+head {
+    display: block;
+    position: relative;
+    width: 200px;
+    margin: 10% auto 0;
+    -webkit-animation: shvr 0.2s infinite;
+    animation: shvr 0.2s infinite;
+}
+
+head::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: # 000;
+    position: absolute;
+    top: 30 px;
+    left: 25 px;
+    border - radius: 50 %;
+    box - shadow: 125 px 0 0 #000;
+    -webkit-animation: eye 2.5s infinite;
+    animation: eye 2.5s infinite;
+}
+
+meta {
+    position: relative;
+    display: inline-block;
+    background: # fff;
+    width: 75 px;
+    height: 80 px;
+    border - radius: 50 % 50 % 50 % 50 % /45px 45px 45% 45%;
+    - webkit - transform: rotate(45 deg);
+    transform: rotate(45 deg);
+}
+
+meta::after {
+    content: '';
+    position: absolute;
+    border - bottom: 2 px solid# fff;
+    width: 70 px;
+    height: 50 px;
+    left: 0 px;
+    bottom: -10 px;
+    border - radius: 50 %;
+}
+
+meta::before {
+    bottom: auto;
+    top: -100 px;
+    - webkit - transform: rotate(45 deg);
+    transform: rotate(45 deg);
+    left: 0;
+}
+
+meta: nth - of - type(2) {
+    float: right;
+    - webkit - transform: rotate(-45 deg);
+    transform: rotate(-45 deg);
+}
+
+meta: nth - of - type(2)::after {
+    left: 5 px;
+}
+
+meta: nth - of - type(3) {
+    display: none;
+}
+
+body {
+    margin - top: 100 px;
+    text - align: center;
+    color: #fff;
+}
+
+body::before {
+    content: '404';
+    font - size: 80 px;
+    font - weight: 800;
+    display: block;
+    margin - bottom: 10 px;
+}
+
+body::after {
+    content: 'Got lost? How.....?  Why.....?  Ahhhh....';
+    color: #1EA7AB;
+    width: 120px;
+    font-size: 30px;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    -webkit-animation: text-show 2s infinite steps(3);
+    animation: text-show 2s infinite steps(3);
+}
+
+@-webkit-keyframes eye {
+    0%,
+    30%,
+    55%,
+    90%,
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    10%,
+    25% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+    }
+    65% {
+        -webkit-transform: translate(-20px, 0);
+        transform: translate(-20px, 0);
+    }
+    80% {
+        -webkit-transform: translate(20px, 0);
+        transform: translate(20px, 0);
+    }
+}
+
+@keyframes eye {
+    0%,
+    30%,
+    55%,
+    90%,
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    10%,
+    25% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+    }
+    65% {
+        -webkit-transform: translate(-20px, 0);
+        transform: translate(-20px, 0);
+    }
+    80% {
+        -webkit-transform: translate(20px, 0);
+        transform: translate(20px, 0);
+    }
+}
+
+@-webkit-keyframes shvr {
+    0% {
+        -webkit-transform: translate(1px, 1em);
+        transform: translate(1px, 1em);
+    }
+    50% {
+        -webkit-transform: translate(0, 1em);
+        transform: translate(0, 1em);
+    }
+    100% {
+        -webkit-transform: translate(-1px, 1em);
+        transform: translate(-1px, 1em);
+    }
+}
+
+@keyframes shvr {
+    0% {
+        -webkit-transform: translate(1px, 1em);
+        transform: translate(1px, 1em);
+    }
+    50% {
+        -webkit-transform: translate(0, 1em);
+        transform: translate(0, 1em);
+    }
+    100% {
+        -webkit-transform: translate(-1px, 1em);
+        transform: translate(-1px, 1em);
+    }
+}
+
+@-webkit-keyframes text-show {
+    to {
+        text-indent: -373px;
+    }
+}
+
+@keyframes text-show {
+    to {
+        text-indent: -373px;
+    }
+}

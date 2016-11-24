@@ -1,0 +1,208 @@
+/*
+ * Video - 404 Page
+ * Build Date: October 2016
+ * Author: joashp
+ */
+
+
+/* custom CSS files */
+
+@import url(common/font-awesome.min.css);
+@import url(common/ionicons.min.css);
+@import url(common/bootstrap.min.css);
+@import url(common/animate.css);
+
+/*
+* http://meyerweb.com/eric/tools/css/reset/ 
+* v2.0 | 20110126
+* License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ---------------Video 404 style---------------------- */
+
+body {
+    background: #232526;
+    background: -webkit-linear-gradient(to left, #232526, #414345);
+    background: linear-gradient(to left, #232526, #414345);
+}
+
+.text-center {
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1 {
+    font-size: 46px;
+    color: #ffffff;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.item {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.item a {
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: .4s cubic-bezier(0.25,.46,.45,.94);
+    transition: .4s cubic-bezier(0.25,.46,.45,.94);
+    -webkit-transition-property: background-color,color;
+    transition-property: background-color,color;
+    letter-spacing: 0;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 20px;
+    color: #fff;
+    line-height: 0;
+    text-align: center;
+}
